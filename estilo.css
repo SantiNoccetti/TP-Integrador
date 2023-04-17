@@ -4,7 +4,9 @@
     text-decoration: none;
     font-family: 'Work Sans', sans-serif;
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 /*
 ==========================================
             HEADER
@@ -15,7 +17,7 @@ header {
     z-index: 3;
     display: flex;
     height: fit-content;
-    background-color: #271144;
+    background: linear-gradient(180deg, #462570, #521b99b7);
     justify-content: space-around;
     align-items: center;
     padding: 1.5vh;
@@ -24,21 +26,29 @@ header {
 
 .logo-imagen {
 
-    height: 15vh;
-    margin-right: 55vh;
+    height: 13vh;
     cursor: pointer;
-
+    margin: auto;
 }
-
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin: 0 ;
+}
 .nav-link {
     color: white;
     font-weight: 600;
-    padding-right: 10vh;
+    transition: color .3s,transform 0.2s ease-in-out;
 }
 
-.nav-link:hover {
-    color: #611fb1;
+.nav-link:hover,.nav-link:focus {
+    color: #000;
+
+    transform: scale(1.1);
 }
+
 
 /*
 ==========================================
@@ -51,19 +61,22 @@ header {
 */
 
 .hero {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .7)), url("img/fondo6.jpg");
+    background: linear-gradient(rgba(26, 12, 31, 0.5),rgba(58, 3, 50, 0.969) ), url("fondo.jpg");
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     text-align: center;
     width: 100%;
-    height: 650px;
+    height: 700px;
 }
 
 .hero .contenido-hero {
-
+    position: absolute;
+    z-index: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,18 +90,24 @@ header {
     font-size: 90px;
     padding: 20px;
     color: white;
-    text-shadow: rgb(29, 28, 28) 6px 0px;
+    opacity: .7;
     font-family: 'Work Sans', 'Poppins';
+    transition: opacity .3s;
 }
 
 .slogan-hero {
     padding: 10px 0px 20px 0px;
     font-size: 21px;
     color: white;
-    text-shadow: black 3px 0px;
+    opacity: .7;
     font-family: 'Work Sans', 'Poppins';
+    transition: opacity .3s;
 }
-
+.titulo-hero:hover, .slogan-hero:hover{
+    opacity: 1;
+    cursor: default;
+    
+}
 .boton-hero {
     background-color: rgb(27, 27, 27);
     color: white;
@@ -100,15 +119,12 @@ header {
     font-family: 'Work Sans', 'Poppins';    
 }
 
-.boton-hero:hover {
-    color: black;
-    background-color: rgba(255, 255, 255, 0.815);
-}
+
 
 /* segundo section */
 .hero2 {
     width: 100%;
-    height: 350px;
+    height: 330px;
     display: flex;
     justify-content: space-around;
     background: linear-gradient(rgba(19, 14, 26, 0.9), rgba(14, 1, 14, 0.8));
@@ -158,34 +174,104 @@ header {
     height: 400px;
     column-gap: 50px;
     padding: 25px 0;
+    
+    background-size: 400% 400%;
+    animation: cambiar 10s ease infinite;
 }
 .grid-servicios {
     text-align: center;
     color: #fff;
-    border: 2px solid grey;
     border-radius: 40px;
     position: relative;
     background: linear-gradient(180deg, #271144, #521b99b7);
     width: 100%;
-}
+    border: none;
+    box-shadow: 0 0 10px 3px rgb(13, 105, 105);
+    overflow: hidden;
+  }
+  
+  .grid-servicios::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(-45deg, #00ffff, #0066ff, #00ffff);
+    z-index: -1;
+    filter: blur(10px);
+  }
+  
+  .grid-servicios {
+    text-align: center;
+    color: #fff;
+    border-radius: 40px;
+    position: relative;
+    background: linear-gradient(180deg, #271144, #521b99b7);
+    width: 100%;
+    box-shadow: 0 0 10px 3px rgb(13, 105, 105);
+    overflow: hidden; /* Para ocultar el desbordamiento del contenido del contenedor */
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgb(13, 105, 105);
+    animation: border-neon 2s linear infinite; /* Agregamos la animación */
+  }
+  
+  /* Agregamos un div con la clase .border que será el que tenga el borde estilo neon */
 
+  
+  /* Creamos la animación */
+  @keyframes border-neon {
+    0% {
+      border-color: rgba(90, 255, 255, 1);
+      box-shadow: 0 0 10px 3px rgba(90, 255, 255, 0.5);
+    }
+    50% {
+      border-color: rgba(90, 255, 255, 0.5);
+      box-shadow: 0 0 20px 6px rgba(90, 255, 255, 0.3);
+    }
+    100% {
+      border-color: rgba(90, 255, 255, 1);
+      box-shadow: 0 0 10px 3px rgba(90, 255, 255, 0.5);
+    }
+  }
 .servicio-estilo {
     margin: 20px 0;
 }
-
+.servicio-estilo h2 {
+    margin-bottom: 30px;
+    position: relative; /* establecemos la posición relativa para poder posicionar el elemento de reflejo */
+  }
+  
+  .servicio-estilo h2::after {
+    content: ""; /* agregamos un elemento de pseudocontenido para representar el reflejo */
+    position: absolute; /* establecemos la posición absoluta para poder posicionar el elemento */
+    bottom: -5px; /* posicionamos el elemento debajo del elemento principal */
+    left: 0;
+    right: 0;
+    height: 5px; /* establecemos la altura del reflejo */
+    background-color: cyan; /* establecemos el color de fondo del reflejo */
+    opacity: 0.3; /* establecemos la opacidad del reflejo */
+ 
+  }
+  
+ 
 .servicio-estilo p {
     font-size: 12px;
     font-weight: 400;
     justify-content: center;
     padding: 5px 0;
 }
-
+.descarga{
+    margin-bottom: 30px;
+}
 .precio {
     font-size: 35px;
 }
 
 .span {
-    font-size: 12px;
+    margin-top:5px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .bt {
@@ -202,13 +288,15 @@ header {
     cursor: pointer;
     transition: 0.3s;
     background-color: #300766;
+    color: #F7EFE5;
 }
 
 .bt:hover {
     width: 40%;
     transition: 0.6s;
-    background-color: #702acc;
-    color: #fff;
+    background-color: #4ce7e7;
+    font-style: 700;
+    color: #000000;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -230,7 +318,7 @@ header {
 .cont-preguntas{
     position:relative ;
     z-index: 4;
-    margin: 30px 250px;
+    margin: 30px 250px 0px 250px;
     padding-bottom: 50px;
 }
 .cont-pregunta{
@@ -241,8 +329,12 @@ header {
     opacity: .5;
     cursor: pointer;
 }
+
 .cont-pregunta.activa{
     opacity: 1;
+    content: "";
+    z-index: -1;
+    box-shadow: 0 0 10px 3px rgb(13, 105, 105);
 }
 .cont-pregunta.activa .respuesta{
     opacity: 1;
@@ -280,10 +372,8 @@ header {
     height: fit-content;
     width: 100%;
     color: #000;
-    background:linear-gradient(25deg,#1a0336,#78074b,#9e1a1a);
-    background-size: 400% 400%;
-    animation: cambiar 10s ease infinite;
-    overflow: hidden;
+    background:linear-gradient(180deg, rgba(88, 12, 77, 1),#064443,#550b42, #230e31);
+
 }
 @keyframes cambiar{
     0%{background-position: 0% 50%;}
@@ -293,12 +383,10 @@ header {
 
 .fondo{
     position: absolute;
-
     z-index: 2;
     width: 100%;
-    height: 100vh;
+    height: 112vh;
     background-position-x: center;
-    
     overflow: hidden;
 }
 .estrellas{
@@ -452,10 +540,7 @@ span:nth-child(10){
     margin-left: 4%;
 }
 
-hr {
-    background-color: #271144;
-    height: 1%;
-}
+
 
 .menu-pie {
     display: grid;
@@ -480,29 +565,10 @@ hr {
     color: #42032C
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
 
-}
 
-input {
-    border: none;
-    padding: 5px 20px;
-}
 
-button {
-    padding: 5px 20px;
-    background-color: #F7EFE5;
-    border: none;
-}
 
-button:hover {
-    background-color: #42032C;
-    color: #F7EFE5;
-    transition: all 0.4s;
-}
 
 .derechos-autor {
     display: flex;
