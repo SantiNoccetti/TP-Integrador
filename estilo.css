@@ -127,9 +127,29 @@ nav{
     height: 330px;
     display: flex;
     justify-content: space-around;
-    background: linear-gradient(rgba(19, 14, 26, 0.9), rgba(14, 1, 14, 0.8));
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    background:linear-gradient(180deg, #230e31,#230e31,#063130,#550b42 );
 }
+.cont-hero2{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
 
+}
+.nosotros{
+    margin-bottom: 50px;
+    font-size: 40px;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
 .info {
     display: flex;
     margin: auto;
@@ -143,18 +163,26 @@ nav{
 
 .cont-info {
     padding: 10px;
+    height: 139px;
 }
+
 
 .titulo-cont-info {
     font-family: work sans, poping;
     font-size: 25px;
     color: rgba(255, 255, 255, 0.911);
+    display: flex;
+    justify-content: center;
 }
 
 .parrafo-cont-info {
     padding-top: 10px;
     font-size: 17px;
     color: rgba(255, 255, 255, 0.911);
+    display: flex;
+    justify-content: center;
+
+    text-align: center;
 }
 /*
 ==========================================
@@ -313,6 +341,7 @@ nav{
     padding: 50px;
     text-align: center;
     color: white;
+    
 }
 /* titulo preguntas */
 .cont-preguntas{
@@ -328,6 +357,11 @@ nav{
     border-radius: 10px;
     opacity: .5;
     cursor: pointer;
+}
+.cont-pregunta:hover{
+    transform: scale(1.01);
+    opacity: .7;
+    transition: all .3s;
 }
 
 .cont-pregunta.activa{
@@ -514,25 +548,13 @@ span:nth-child(10){
 
 .pie-de-pagina {
     background-color: #393E46;
+    height: 250px;
 
 }
 
-.logo-pie {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    letter-spacing: 1px;
-}
 
 
-.header-del-pie {
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    align-items: center;
 
-    background: 100%, #42032C;
-}
 
 .un-pie {
     font-size: 30px;
@@ -549,10 +571,7 @@ span:nth-child(10){
     font-size: 20x;
 }
 
-.menu-pie div {
-    display: grid;
-    margin: 1rem;
-}
+
 
 
 .link-footer {
