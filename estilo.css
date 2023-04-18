@@ -9,6 +9,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-size: 16px;
+}
+
 /*
 ==========================================
             HEADER
@@ -28,7 +32,7 @@ header {
 
 .logo-imagen {
 
-    height: 13vh;
+    width: 6.875em;
     cursor: pointer;
     margin: auto;
 }
@@ -71,12 +75,14 @@ nav {
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(26, 12, 31, 0.5), rgba(58, 3, 50, 0.969)), url("imagenes/fondo.jpg");
+
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     text-align: center;
     width: 100%;
-    height: 700px;
+    height: 43.75em;
 }
 
 .hero .contenido-hero {
@@ -93,7 +99,7 @@ nav {
 
 .titulo-hero {
     font-size: 90px;
-    padding: 20px;
+    padding: 1.25rem;
     color: white;
     opacity: .7;
     font-family: 'Work Sans', 'Poppins';
@@ -101,7 +107,7 @@ nav {
 }
 
 .slogan-hero {
-    padding: 10px 0px 20px 0px;
+    padding: 0.625rem 0px 1.25rem 0px;
     font-size: 21px;
     color: white;
     opacity: .7;
@@ -120,9 +126,9 @@ nav {
     background-color: rgb(27, 27, 27);
     color: white;
     font-size: 17px;
-    margin-top: 20px;
-    padding: 20px 50px;
-    border-radius: 15px;
+    margin-top: 1.25rem;
+    padding: 1.25rem 3.125rem;
+    border-radius: 0.9375rem;
     transition: .5s;
     font-family: 'Work Sans', 'Poppins';
 }
@@ -132,7 +138,7 @@ nav {
 /* segundo section */
 .hero2 {
     width: 100%;
-    height: 330px;
+    height: 20.625em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -148,15 +154,15 @@ nav {
     align-items: center;
     align-content: center;
     flex-direction: row;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
+    margin-bottom: 3.125em;
+    padding-bottom: 3.125em;
 
 }
 
 .nosotros {
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     font-size: 40px;
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
     color: white;
     cursor: default;
@@ -169,14 +175,14 @@ nav {
 }
 
 .fa-solid fa-recycle {
-    padding: 10px;
+    padding: 0.625rem;
     font-size: 30px;
     color: rgba(255, 255, 255, 0.911);
 }
 
 .cont-info {
-    padding: 10px;
-    height: 139px;
+    padding: 0.625em;
+    height: 8.687em;
     cursor: default;
 }
 
@@ -190,7 +196,7 @@ nav {
 }
 
 .parrafo-cont-info {
-    padding-top: 10px;
+    padding-top: 0.625rem;
     font-size: 17px;
     color: rgba(255, 255, 255, 0.911);
     display: flex;
@@ -214,9 +220,9 @@ nav {
     grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
     margin: 0 auto;
-    height: 400px;
-    column-gap: 50px;
-    padding: 25px 0;
+    height: 25em;
+    column-gap: 3.125em;
+    padding: 1.56em 0;
 
     background-size: 400% 400%;
     animation: cambiar 10s ease infinite;
@@ -225,38 +231,38 @@ nav {
 .grid-servicios {
     text-align: center;
     color: #fff;
-    border-radius: 40px;
+    border-radius: 2.5em;
     position: relative;
     background: linear-gradient(180deg, #271144, #521b99b7);
     width: 100%;
     border: none;
-    box-shadow: 0 0 10px 3px rgb(13, 105, 105);
+    box-shadow: 0 0 0.62em 0.187em rgb(13, 105, 105);
     overflow: hidden;
 }
 
 .grid-servicios::before {
     content: "";
     position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
+    top: -0.625em;
+    left: -0.625em;
+    right: -0.625em;
+    bottom: -0.625em;
     background: linear-gradient(-45deg, #00ffff, #0066ff, #00ffff);
     z-index: -1;
-    filter: blur(10px);
+    filter: blur(0.625em);
 }
 
 .grid-servicios {
     text-align: center;
     color: #fff;
-    border-radius: 40px;
+    border-radius: 2.5em;
     position: relative;
     background: linear-gradient(180deg, #271144, #521b99b7);
     width: 100%;
-    box-shadow: 0 0 10px 3px rgb(13, 105, 105);
+    box-shadow: 0 0 0.625em 0.187em rgb(13, 105, 105);
     overflow: hidden;
     border: 2px solid transparent;
-    box-shadow: 0 0 10px 3px rgb(13, 105, 105);
+    box-shadow: 0 0 0.62em 0.187em rgb(13, 105, 105);
     animation: border-neon 2s linear infinite;
 }
 
@@ -267,26 +273,26 @@ nav {
 @keyframes border-neon {
     0% {
         border-color: rgba(90, 255, 255, 1);
-        box-shadow: 0 0 10px 3px rgba(90, 255, 255, 0.5);
+        box-shadow: 0 0 0.62em 0.187em rgba(90, 255, 255, 0.5);
     }
 
     50% {
         border-color: rgba(90, 255, 255, 0.5);
-        box-shadow: 0 0 20px 6px rgba(90, 255, 255, 0.3);
+        box-shadow: 0 0 1.25em 0.37em rgba(90, 255, 255, 0.3);
     }
 
     100% {
         border-color: rgba(90, 255, 255, 1);
-        box-shadow: 0 0 10px 3px rgba(90, 255, 255, 0.5);
+        box-shadow: 0 0 0.625em 0.187em rgba(90, 255, 255, 0.5);
     }
 }
 
 .servicio-estilo {
-    margin: 20px 0;
+    margin: 1.25em 0;
 }
 
 .servicio-estilo h2 {
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
     position: relative;
     cursor: default;
 }
@@ -294,10 +300,10 @@ nav {
 .servicio-estilo h2::after {
     content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: -0.312em;
     left: 0;
     right: 0;
-    height: 5px;
+    height: 0.312em;
     background-color: cyan;
     opacity: 0.3;
 
@@ -308,21 +314,21 @@ nav {
     font-size: 12px;
     font-weight: 400;
     justify-content: center;
-    padding: 5px 0;
+    padding: 0.3125rem 0;
     cursor: default;
 }
 
 .descarga {
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 
 .precio {
-    font-size: 35px;
+    font-size: 2.1875em;
     cursor: default;
 }
 
 .span {
-    margin-top: 5px;
+    margin-top: 0.312rem;
     font-size: 14px;
     cursor: default;
     font-weight: 600;
@@ -331,14 +337,14 @@ nav {
 .bt {
     display: block;
     width: 35%;
-    padding: 15px;
-    border-radius: 15px;
+    padding: 0.937em;
+    border-radius: 0.937em;
     margin: 0 auto;
     border: none;
     position: absolute;
     right: 0;
     left: 0;
-    bottom: 10px;
+    bottom: 0.625em;
     cursor: pointer;
     transition: 0.3s;
     background-color: #300766;
@@ -351,7 +357,7 @@ nav {
     background-color: #4ce7e7;
     font-style: 700;
     color: #000000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* taiel         */
@@ -364,7 +370,7 @@ nav {
 /* titulo preguntas */
 .titulo-preguntas {
     font-size: 40px;
-    padding: 50px;
+    padding: 3.125rem;
     text-align: center;
     color: white;
     cursor: default;
@@ -375,15 +381,15 @@ nav {
 .cont-preguntas {
     position: relative;
     z-index: 4;
-    margin: 30px 250px 0px 250px;
-    padding-bottom: 50px;
+    margin: 1.875em 15.625em 0px 15.625em;
+    padding-bottom: 3.125em;
 }
 
 .cont-pregunta {
-    margin: 30px 0px;
+    margin: 1.875em 0em;
     background-color: white;
-    padding: 20px 40px;
-    border-radius: 10px;
+    padding: 1.25em 2.5em;
+    border-radius: 0.625em;
     opacity: .5;
     cursor: pointer;
 }
@@ -398,12 +404,12 @@ nav {
     opacity: 1;
     content: "";
     z-index: -1;
-    box-shadow: 0 0 10px 3px rgb(13, 105, 105);
+    box-shadow: 0 0 0.625em 0.187em rgb(13, 105, 105);
 }
 
 .cont-pregunta.activa .respuesta {
     opacity: 1;
-    margin-top: 20px;
+    margin-top: 1.25em;
     overflow: visible;
     max-height: fit-content;
 }
@@ -413,7 +419,7 @@ nav {
 }
 
 .respuesta {
-    line-height: 14px;
+    line-height: 0.875rem;
     font-size: 14px;
     font-weight: 400;
     max-height: 0;
@@ -426,14 +432,14 @@ nav {
     display: flex;
     justify-content: space-between;
     font-size: 19px;
-    line-height: 19px;
+    line-height: 1.1875rem;
     font-weight: 500;
 
     align-items: center;
 }
 
 .ver-mas {
-    width: 19px;
+    width: 1.1875em;
 }
 
 /* fondo */
@@ -463,7 +469,7 @@ nav {
     position: absolute;
     z-index: 2;
     width: 100%;
-    height: 112vh;
+    height: 43.75em;
     background-position-x: center;
     overflow: hidden;
 }
@@ -472,11 +478,11 @@ nav {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 4px;
-    height: 4px;
+    width: 0.25em;
+    height: 0.25em;
     background-color: #fff;
     border-radius: 50%;
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+    box-shadow: 0 0 0 0.25em rgba(255, 255, 255, 0.1), 0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
     animation: animate 3s linear infinite;
     opacity: 0;
 }
@@ -486,8 +492,8 @@ span::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 300px;
-    height: 1px;
+    width: 18.75em;
+    height: 0.0625em;
     background: linear-gradient(90deg, #fff, transparent);
 }
 
@@ -502,14 +508,14 @@ span::before {
     }
 
     100% {
-        transform: rotate(315deg) translateX(-1000px);
+        transform: rotate(315deg) translateX(-62.5em);
         opacity: 0;
     }
 }
 
 span:nth-child(1) {
     top: 0;
-    right: 500px;
+    right: 31.25em;
     left: initial;
     animation-delay: 0.3s;
     animation-duration: 3s;
@@ -517,14 +523,14 @@ span:nth-child(1) {
 
 span:nth-child(2) {
     top: 0;
-    right: 80px;
+    right: 5em;
     left: initial;
     animation-delay: 0.6s;
     animation-duration: 4s;
 }
 
 span:nth-child(3) {
-    top: 80px;
+    top: 5em;
     right: 0px;
     left: initial;
     animation-delay: 1.2s;
@@ -533,7 +539,7 @@ span:nth-child(3) {
 
 span:nth-child(4) {
     top: 0;
-    right: 180px;
+    right: 11.25em;
     left: initial;
     animation-delay: 0.9s;
     animation-duration: 3.5s;
@@ -541,7 +547,7 @@ span:nth-child(4) {
 
 span:nth-child(5) {
     top: 0;
-    right: 40px;
+    right: 2.5em;
     left: initial;
     animation-delay: 0.7s;
     animation-duration: 2.5s;
@@ -549,7 +555,7 @@ span:nth-child(5) {
 
 span:nth-child(6) {
     top: 0;
-    right: 600px;
+    right: 37.5em;
     left: initial;
     animation-delay: 0.5s;
     animation-duration: 3.5s;
@@ -565,7 +571,7 @@ span:nth-child(7) {
 
 span:nth-child(8) {
     top: 0;
-    right: 700px;
+    right: 43.75em;
     left: initial;
     animation-delay: 0.8s;
     animation-duration: 2.5s;
@@ -573,7 +579,7 @@ span:nth-child(8) {
 
 span:nth-child(9) {
     top: 0;
-    right: 1000px;
+    right: 62.5em;
     left: initial;
     animation-delay: 1.1s;
     animation-duration: 4s;
@@ -581,7 +587,7 @@ span:nth-child(9) {
 
 span:nth-child(10) {
     top: 0;
-    right: 450px;
+    right: 28.125em;
     left: initial;
     animation-delay: 1.3s;
     animation-duration: 3s;
@@ -609,18 +615,18 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    padding-top: 70px;
-    height: 250px;
+    padding-top: 4.375em;
+    height: 15.625em;
 
 }
 
 .logo-footer {
     position: relative;
-    width: 110px;
+    width: 6.875em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 .data {
@@ -635,7 +641,7 @@ footer {
 }
 
 .redes-sociales {
-    padding: 0px 200px;
+    padding: 0px 12.5em;
 }
 
 .titulo-redes {
@@ -644,14 +650,14 @@ footer {
 }
 
 .listas {
-    margin-top: 20px;
+    margin-top: 1.25em;
     font-weight: 300;
     list-style: none;
 
 }
 
 .listas li {
-    margin: 10px 0px;
+    margin: 0.625em 0rem;
 
 }
 
@@ -671,9 +677,9 @@ footer {
 }
 
 .cont-redes {
-    height: 20px;
-    width: 500px;
-    margin-top: 10px;
+    height: 1.25em;
+    width: 31.25em;
+    margin-top: 0.625em;
     width: auto;
     display: flex;
     justify-content: space-around;
@@ -681,8 +687,8 @@ footer {
 
 .redes {
 
-    width: 20px;
-    height: 20px;
+    width: 1.25em;
+    height: 1.25em;
     color: #00ffff;
     transition: transform .3s;
 }
@@ -695,8 +701,8 @@ footer {
 
 .whatsapp {
     z-index: 999;
-    width: 25px;
-    padding: 15px;
+    width: 1.56em;
+    padding: 0.9375em;
     border-radius: 50%;
     position: fixed;
     right: 2vw;
@@ -706,7 +712,7 @@ footer {
 
 
 .derechos-autor {
-    height: 50px;
+    height: 3.125em;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -720,3 +726,137 @@ footer {
     font-size: 13px;
     color: white;
 }
+
+
+/*
+==========================================
+            RESPONSIVE
+==========================================
+*/
+
+
+
+@media (max-width : 1200px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo-imagen {
+        width: 6.875em;
+    }
+
+    .hero2 {
+        padding: 3.125em 0;
+    }
+}
+
+
+
+@media (max-width : 992px) {
+
+
+
+    body {
+        font-size: 15px;
+    }
+
+    .logo-imagen {
+        width: 4.875em;
+    }
+
+    .servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 50%;
+        margin: 0 auto;
+        height: 80em;
+        column-gap: 3.125em;
+        padding: 1.56em 0;
+
+        background-size: 400% 400%;
+        animation: cambiar 10s ease infinite;
+    }
+
+    .grid-servicios {
+        margin: 1em 0;
+    }
+
+    .redes-sociales {
+        padding: 0 5em;
+    }
+
+    .hero {
+        background-size: 100vw, 140vh;
+        background-position: top;
+
+    }
+
+    .cont-pregunta {
+        width: 25em;
+
+        padding: 1.25em 2 2em;
+    }
+
+    .cont-preguntas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width : 760px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    .logo-imagen {
+        width: 4.875em;
+    }
+
+    .hero2 {
+        height: fit-content;
+    }
+
+    .cont-hero2 {
+        height: 30em;
+        flex-direction: column;
+    }
+
+    .cont-info {
+        margin: 1em 0;
+    }
+
+    .redes-sociales {
+        padding: 0 3em;
+
+    }
+}
+
+@media (max-width : 576px) {
+    body {
+        font-size: 13px;
+    }
+
+    .redes-sociales {
+        padding: 0 1.5em;
+
+    }
+
+    .grid-servicios {
+        margin: .5em 0;
+        height: 30em;
+    }
+
+    .servicios {
+        margin-bottom: 10em;
+    }
+}
+
+/*
+==========================================
+            RESPONSIVE
+==========================================
+*/
