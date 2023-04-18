@@ -98,7 +98,7 @@ nav {
 }
 
 .titulo-hero {
-    font-size: 90px;
+    font-size: 5.625em;
     padding: 1.25rem;
     color: white;
     opacity: .7;
@@ -108,7 +108,7 @@ nav {
 
 .slogan-hero {
     padding: 0.625rem 0px 1.25rem 0px;
-    font-size: 21px;
+    font-size: 1.3125em;
     color: white;
     opacity: .7;
     font-family: 'Work Sans', 'Poppins';
@@ -122,16 +122,7 @@ nav {
 
 }
 
-.boton-hero {
-    background-color: rgb(27, 27, 27);
-    color: white;
-    font-size: 17px;
-    margin-top: 1.25rem;
-    padding: 1.25rem 3.125rem;
-    border-radius: 0.9375rem;
-    transition: .5s;
-    font-family: 'Work Sans', 'Poppins';
-}
+
 
 
 
@@ -323,13 +314,13 @@ nav {
 }
 
 .precio {
-    font-size: 2.1875em;
+    font-size: 2.18em;
     cursor: default;
 }
 
 .span {
     margin-top: 0.312rem;
-    font-size: 14px;
+    font-size: 0.875em;
     cursor: default;
     font-weight: 600;
 }
@@ -723,7 +714,7 @@ footer {
 .derechos-autor p {
     cursor: default;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 0.8125em;
     color: white;
 }
 
@@ -852,6 +843,29 @@ footer {
 
     .servicios {
         margin-bottom: 10em;
+    }
+}
+
+@media (max-width : 470px) {
+    body {
+        font-size: 10px;
+    }
+
+    .redes-sociales {
+        padding: 0 1.5em;
+
+    }
+
+    .grid-servicios {
+        margin: .5em 0;
+        height: 30em;
+    }
+
+    .servicios {
+        margin-bottom: 10em;
+    }
+    .bt{
+        width: 50%;
     }
 }
 
