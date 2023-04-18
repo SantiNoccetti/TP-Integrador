@@ -65,7 +65,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgba(26, 12, 31, 0.5),rgba(58, 3, 50, 0.969) ), url("fondo.jpg");
+    background: linear-gradient(rgba(26, 12, 31, 0.5),rgba(58, 3, 50, 0.969) ), url("imagenes/fondo.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -546,44 +546,82 @@ span:nth-child(10){
 
 
 
-.pie-de-pagina {
-    background-color: #393E46;
+footer {
+    background: linear-gradient(180deg, #540c42, #0b0218);
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 70px;
     height: 250px;
 
 }
-
-
-
-
-
-.un-pie {
-    font-size: 30px;
-    color: #F7EFE5;
-    margin-left: 4%;
+.logo-footer{
+    position: relative;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.data{
+    margin:  auto;
+}
+.titulo-data{
+    color: white;
+    font-weight: 400;
+    
+}
+.redes-sociales{
+    padding: 0px 200px;
+}
+.titulo-redes{
+    color: white;
 }
 
-
-
-.menu-pie {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem, 3.5rem;
-    font-size: 20x;
+.listas{
+    margin-top: 20px;
+    font-weight: 300;
+    list-style: none;
+    
 }
-
-
+.listas li{
+    margin: 10px 0px;
+    
+}
 
 
 .link-footer {
     color: #F7EFE5;
     text-decoration: none;
-    padding: 4px;
+
+    transition: color .3s;
 }
 
-.link-footer:hover {
-    color: #42032C
+.link-footer:hover,.link-footer:focus {
+    color: rgb(3, 148, 148);
+    transform: scale(1.2);
+    
 }
 
+.cont-redes{
+    height: 20px;
+    width: 500px;
+    margin-top: 10px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.redes{
+
+   width: 20px;
+   height: 20px;
+   color: #00ffff;
+   transition: transform .3s;
+}
+.redes:hover{
+    transform: scale(1.1);
+    
+}
 
 
 
@@ -593,5 +631,5 @@ span:nth-child(10){
     display: flex;
     justify-content: space-between;
     padding: 1%;
-    background: #222222
+    background: #000000
 }
